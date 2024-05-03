@@ -17,7 +17,7 @@
         document.getElementById("passwordForm").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent form submission
             var password = document.getElementById("password").value;
-            if (password === config.password) {
+            if (password === "") {
                 window.location.href = config.secret_file; // Redirect to authorized page
             } else {
                 alert("Incorrect password. Please try again.");
